@@ -63,7 +63,7 @@ const Contact = () => {
                 <Input type="firstname" placeholder="Firstname" />
                 <Input type="lastname" placeholder="Lastname" />
                 <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input type="number" placeholder="Phone number" />
               </div>
               {/* select */}
               <Select>
