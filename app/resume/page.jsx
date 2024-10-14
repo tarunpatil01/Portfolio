@@ -88,7 +88,7 @@ const experience = {
     "I have 1 years of experience in web development. I have worked with various clients and companies to build websites and web applications that are fast, secure, and easy to manage.",
   items: [
     {
-      company: "Xyz",
+      company: "GlobalFire Services",
       role: "Full Stack Web Developer",
       duration: "Sept 2024 - Dec 2024",
     },
