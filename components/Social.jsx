@@ -22,7 +22,7 @@ const socials = [
     {
       icon: <FaCode />,
       path: "https://leetcode.com/u/tarunpatil01/"
-    }
+    },
 ];
         
 
