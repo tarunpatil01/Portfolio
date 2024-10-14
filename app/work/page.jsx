@@ -65,7 +65,7 @@ const projects = [
   {
     num: "05",
     category: "Balloon Shooter Game",
-    title: "Project 5",
+    title: "Python Project",
     description:
       "Balloon Shooter is a simple arcade-style game where the player shoots balloons with mouse. The objective of the game is to shoot as many balloons as possible..",
     stack: [{ name: "Python" }, { name: "PyGame-python module" }],
@@ -73,8 +73,17 @@ const projects = [
     github: "https://github.com/tarunpatil01/Balloon-Shooter-Game",
     image: "/assets/work/thumb5.png",
   },
+  {
+    num: "06",
+    category: "Industry/Internship Paid Project",
+    title: "Global Fire Services Website",
+    description:
+      "A website for Global Fire Services, a company that provides fire safety services.",
+    stack: [{ name: "React" }, { name: "Next.js" }, { name: "Tailwind CSS" }, { name: "Framer Motion" }],
+    live: "https://global25fireservices.com",
+    image: "/assets/work/thumb6.png",
+  },
   
-
 ];
 
 const Work = () => {
@@ -123,34 +132,38 @@ const Work = () => {
             </ul>
             {/* border */}
             <div className="border border-white/20"></div>
-            {/* buttons */}
-            <div className="flex items-center gap-4">
-              {/* Live project button */}
-              <Link href={project.live}>
-                <TooltipProvider delayDuration={100}>
-                  <Tooltip>
-                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/60 flex justify-center items-center group">
-                      <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p>Live project</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </Link>
-              {/* github project button */}
-              <Link href={project.github}>
-                <TooltipProvider delayDuration={100}>
-                  <Tooltip>
-                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/60 flex justify-center items-center group">
-                      <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p>Github repository</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </Link>
+              {/* buttons */}
+              <div className="flex items-center gap-4">
+                {/* Live project button */}
+                {project.live && (
+                  <Link href={project.live}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/60 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+                {/* github project button */}
+                {project.github && (
+                  <Link href={project.github}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/60 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
             </div>
           </div>
         </div>

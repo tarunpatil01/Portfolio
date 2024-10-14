@@ -35,16 +35,21 @@ const Home = () => {
                   src="/assets/resume/badge.svg"
                   alt="Badge"
                 />
+                <img
+                  className="h-8 w-8 p-0 m-0 "
+                  src="/assets/resume/cap.svg"
+                  alt="Cap"
+                />
                 <Button
-                  variant="outline"
-                  size="lg"
-                  className="uppercase flex items-center gap-2"
-                  as="a"
-                  href="/assets/resume/Tarun-Patil-Resume.pdf"
-                >
-                  <a href="/resume">Download my resume</a>
-                  <FiDownload className="text-xl" />
-                </Button>
+                variant="outline"
+                size="lg"
+                className="uppercase flex items-center gap-2"
+                as="a"
+                href="/assets/resume/Tarun-Patil-Resume-New.pdf"
+              >
+                <a href="/assets/resume/Tarun-Patil-Resume-New.pdf">Download my resume</a>
+                <FiDownload className="text-xl" />
+              </Button>
                 <div className="mb-8 xl:mb-0">
                   <Social
                     containerStyles="flex gap-6"
