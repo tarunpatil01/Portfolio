@@ -23,12 +23,12 @@ const photo = () => {
           className=" w-[290px] h-[290px] xl:w-[480px] xl:h-[490px] mix-blend-lighten absolute "
         >
           <Image
-            src="/assets/MYphoto.png" // Route of the image file
+            src="/assets/myphoto.png" // Route of the image file
             priority
             quality={100}
             fill
             alt="photo"
-            className="p-4 object-contain rounded-full"
+            className=" object-contain rounded-full"
           />
         </motion.div>
         {/* circle */}
